@@ -27,8 +27,8 @@ def decrypt(text, shift):
     return encrypt(text, 26 - shift)
 
 # Get user input for text and shift
-text = input("Enter the text to be encrypted: ")
-shift = int(input("Enter the shift value: "))
+text = input("\nEnter the text to be encrypted: ")
+shift = int(input("\nEnter the shift value: "))
 
 print("Text: " + text)
 print("Shift: " + str(shift))
