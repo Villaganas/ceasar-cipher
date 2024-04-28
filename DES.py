@@ -1,3 +1,17 @@
+#This implementation follows the steps outlined:
+
+#1. Generate DES Key: The generate_des_key function creates a DES key securely using get_random_bytes.
+
+#2. Create a Cipher Instance: The DES.new function is used to create a DES cipher instance with the specified key and mode (ECB in this case).
+
+#3. Convert String to Byte[] Array: The _pad_message function converts the plaintext message from string format to a byte array format and pads it to make its length a multiple of 8 bytes.
+
+#4.  Encryption: The encrypt_message function initializes the cipher in encryption mode and encrypts the plaintext message.
+
+#5. Decryption: The decrypt_message function initializes the cipher in decryption mode and decrypts the ciphertext back to the original plaintext.
+#pip install pycryptodome
+
+
 from Crypto.Cipher import DES
 from Crypto.Random import get_random_bytes
 import base64
